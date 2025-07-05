@@ -1,0 +1,83 @@
+[
+    {
+        "title": "MTS Transit: Navigating San Diego's Bus Network",
+        "year": "2023",
+        "image": "../images/network.png",
+        "description": "A visual representation of the city's lifeline, uncovering patterns and insights that go beyond the ordinary commute."
+    }
+    ,
+    {
+        "title": "Loan Applications Visualization",
+        "year": "2024",
+        "image": "../images/example-q3.png",
+        "description": "A visualization that compares interest rates cross different credit score ranges, segmented by loan length."
+    }
+    ,
+    {
+        "title": "HappyWheels",
+        "year": "2025",
+        "image": "../images/happywheels.png",
+        "description": "An immersive, interactive map of bike traffic in Boston."
+    }
+    ,
+    {
+        "title": "Language Models",
+        "year": "2024",
+        "image": "../images/chatgpt.png",
+        "description": "Creating a language model using publicly available books on Project Gutenberg, and using it to generate text."
+    }
+    ,
+    {"title": "DSC 80 Project 4",
+        "year": "2018",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 5",
+        "year": "2018",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 6",
+        "year": "2019",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 7",
+        "year": "2019",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 8",
+        "year": "2019",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 9",
+        "year": "2019",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 10",
+        "year": "2020",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 11",
+        "year": "2021",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+    ,
+    {"title": "DSC 80 Project 12",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis qui dolor quam sunt numquam similique voluptatum, laudantium voluptate, minus suscipit, magnam vitae alias. Modi eius sequi in possimus, incidunt minima obcaecati, amet animi culpa at omnis atque libero?"
+    }
+]

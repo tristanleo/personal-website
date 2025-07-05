@@ -1,0 +1,461 @@
+html {
+  color-scheme: light dark;
+  background-color: Canvas;
+  color: CanvasText;
+}
+
+:root{
+  --color-accent: oklch(65% 30% 340);
+}
+
+html[color-scheme="light"] {
+  color-scheme: light;
+}
+
+html[color-scheme="dark"] {
+  color-scheme: dark;
+}
+
+html:not([color-scheme]) {
+  color-scheme: light dark;
+}
+
+body {
+    font: 100%/1.5 system-ui;
+
+    max-width: 100ch;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+
+    nav {
+      display: flex;
+      margin-bottom: auto;
+
+      --border-color: oklch(50% 10% 200 / 40%);
+      border-bottom: 1px solid var(--border-color);
+
+      a {
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        padding: 0.5em 0.5em 0.1em 0.5em;
+        border-bottom: 0.4em solid transparent;
+        transition: border-color 0.2s ease, background-color 0.2s ease;
+      }
+
+      .current {
+        border-bottom-color: oklch(80% 3% 200);
+      }
+
+      a:hover {
+        border-bottom-color: var(--color-accent);
+        background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+      }
+    }
+
+    body {
+      position: relative;
+    }
+    
+    .color-scheme {
+      position: absolute;
+      top: 1rem;
+      right: 1rem; 
+      font-size: 0.8em; 
+      display: flex;
+      align-items: center;
+      gap: 0.25em;
+    }
+    
+    .color-scheme select {
+      font: inherit;
+      padding: 0.1em 0.3em;
+    }
+
+    input, textarea, button, label {
+      font: inherit;
+  }
+
+    form {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1em;
+    }
+    
+    label {
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-column: 1 / -1;
+    }
+
+    button {
+      grid-column: 1 / -1;
+      width: 100%;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+      gap: 1em;
+    }
+    
+    article {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 3;
+      gap: 1em;
+    }
+    
+    article h2 {
+      margin: 0;
+    }
+    
+    h1 {
+      font-size: 400%;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.1;
+      text-wrap: balance;
+    }
+
+    :root {
+      --accent-color: #e91e63;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      max-width: 100ch;
+      margin-inline: auto;
+      padding: 2rem;
+    }
+
+
+    header {
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-info p {
+      margin: 0.2rem 0;
+      line-height: 1.4;
+      color: #555;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      padding: 0.5rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    /* Section Headings*/
+    .section h2 {
+      color: #e91e63;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    /* Company Titles */
+    .section h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+      font-weight: bold;
+    }
+
+    .section h3 + p {
+      margin-top: 0;
+      margin-bottom: 0.2rem; 
+      color: #555;
+      font-size: 1rem;
+      font-style: italic; 
+    }
+
+    .section h3 + p + p {
+      margin-top: 0;
+      margin-bottom: 0.4rem; 
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .section ul {
+      padding-left: 1.5rem;
+      margin: 0;
+      margin-bottom: 1rem; 
+    }
+
+    .section li {
+      margin-bottom: 0.5rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 2rem 0;
+    }
+    /* projects card */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .project-card {
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    
+    .project-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+      border-radius: 4px;
+    }
+    .project-meta {
+      font-variant-numeric: oldstyle-nums;
+      color: #666;
+      margin-top: 0.5em;
+      font-size: 0.9em;
+    }
+
+    #projects-plot {
+      max-width: 20em;
+      margin-block: 2em;
+      overflow: visible;
+    }
+
+    .legend .swatch {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      background-color: var(--color);
+    }
+    
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* legend for pie chart in Projects page */
+    .legend {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+      gap: 0.75em;
+      padding: 1em;
+      margin-top: 1em;
+      border: 1px solid #ccc;
+    }
+
+    &:has(path:hover) {
+      path:not(:hover) {
+        opacity: 0.5;
+      }
+      path {
+        transition: 300ms;
+      }
+    }
+    .selected {
+      --color: oklch(60% 45% 0) !important;
+    
+      &:is(path) {
+        fill: var(--color);
+      }
+      path { cursor: pointer; }
+
+    }
+    /* lab6 */
+    .summary–title {
+      margin: 0;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+    /* Summary table in Meta page  */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: auto auto;
+      gap: 1.5rem 0;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .stats dt {
+      grid-row: 1;
+      margin: 0;
+      font-size: 0.75rem;
+      color: #666;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+   
+    .stats dd {
+      grid-row: 2;
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    /* Grid line opacity for plot on Meta page */
+    .tick line {
+      stroke: lightgray;
+      stroke-opacity: 0.5;
+    }
+
+    .tooltip {
+      position: fixed;
+      top: 1em;
+      left: 1em;
+      background: Canvas;
+      border: 1px solid #ccc;
+      padding: 1em;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    dl.info {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.25em 1em;
+      font-size: 0.9em;
+      margin: 1em;
+      transition-duration: 500ms;
+      transition-property: opacity, visibility;
+    }
+
+    /* Adjusting visibility of tooltip*/
+    dl.info[hidden]:not(:hover, :focus-within) {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    circle {
+      transition: 200ms;
+      transform-origin: center;
+      transform-box: fill-box;
+      @starting-style {
+        r: 0;
+      }
+    }
+    
+    circle:hover {
+      transform: scale(1.5);
+    }
+    /* Styling the selection rectangle on Meta page */
+    @keyframes marching-ants {
+      to {
+        stroke-dashoffset: -8; /* 5 + 3 */
+      }
+    }
+    
+    .selection {
+      fill-opacity: 0.1;
+      stroke: black;
+      stroke-opacity: 0.7;
+      stroke-dasharray: 5 3;
+      animation: marching-ants 2s linear infinite;
+    }
+
+    circle.selected {
+      fill: #ff6b6b;
+    }
+  }
+  #files {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    align-items: start;
+  }
+
+  #files dt small {
+    display: block;
+    margin-top: 0.2em;
+    font-size: 0.8em;
+    color: #666;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  #files > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  #files dt > small {
+    display: block;
+    margin-top: 0.2em;
+    font-size: 0.8em;
+    color: #666;
+    font-style: normal;
+  }
+  
+
+  #files dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+
+  .loc {
+    display: flex;
+    width: 0.5em;
+    aspect-ratio: 1;
+    background: var(--color);
+    border-radius: 50%;
+  }
+
+  #scrolly-1 {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+  }
+  #scrolly-1 > * {
+    flex: 1;
+  }
+  
+  #scatter-story {
+    position: relative;
+  }
+  
+  #scatter-plot {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    height: 50vh;
+  }
+  .step {
+    padding-bottom: 2em;
+  }
