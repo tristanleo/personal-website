@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
 html {
   color-scheme: light dark;
   background-color: Canvas;
@@ -5,7 +7,8 @@ html {
 }
 
 :root{
-  --color-accent: oklch(65% 30% 340);
+  --color-accent: #0d6096; /* updated blue */
+  --accent-color: #0d6096;
 }
 
 html[color-scheme="light"] {
@@ -30,7 +33,7 @@ body {
       display: flex;
       margin-bottom: auto;
 
-      --border-color: oklch(50% 10% 200 / 40%);
+      --border-color: #0d609633; /* semi-transparent blue */
       border-bottom: 1px solid var(--border-color);
 
       a {
@@ -44,7 +47,7 @@ body {
       }
 
       .current {
-        border-bottom-color: oklch(80% 3% 200);
+        border-bottom-color: #0d6096;
       }
 
       a:hover {
@@ -119,12 +122,8 @@ body {
       text-wrap: balance;
     }
 
-    :root {
-      --accent-color: #e91e63;
-    }
-
     body {
-      font-family: system-ui, sans-serif;
+      font-family: 'Open Sans', system-ui, sans-serif;
       line-height: 1.6;
       max-width: 100ch;
       margin-inline: auto;
@@ -161,7 +160,7 @@ body {
 
     /* Section Headings*/
     .section h2 {
-      color: #e91e63;
+      color: var(--color-accent);
       font-size: 1.8rem;
       margin-bottom: 0.5rem;
       text-transform: uppercase;
@@ -201,7 +200,7 @@ body {
 
     hr {
       border: none;
-      border-top: 1px solid #eee;
+      border-top: 2px solid #0d609622;
       margin: 2rem 0;
     }
     /* projects card */
@@ -458,4 +457,75 @@ body {
   }
   .step {
     padding-bottom: 2em;
+  }
+
+  button, .button {
+    background: linear-gradient(90deg, #0d6096 80%, #0b4c75 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 1em 2em;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(13,96,150,0.08);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  }
+
+  button:hover, .button:hover {
+    background: linear-gradient(90deg, #0b4c75 80%, #0d6096 100%);
+    box-shadow: 0 4px 16px rgba(13,96,150,0.15);
+    transform: translateY(-2px) scale(1.03);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(13,96,150,0.07);
+  }
+
+  nav a, nav .current {
+    transition: background 0.2s, border-bottom-color 0.2s;
+  }
+
+  form input, form textarea {
+    font-size: 1.1em;
+    padding: 0.75em 1em;
+    border: 1px solid #b0c4d6;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  form input:focus, form textarea:focus {
+    border: 1.5px solid #0d6096;
+    box-shadow: 0 0 0 2px #0d609633;
+    outline: none;
+  }
+  form label {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+
+  .project-card {
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .project-card:hover {
+    box-shadow: 0 8px 32px rgba(13,96,150,0.15);
+    transform: translateY(-4px) scale(1.03);
+  }
+
+  /* Example SVG icon style for social/contact (add to HTML as needed) */
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    fill: #0d6096;
+    margin-right: 0.5em;
   }
